@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Modal</title>
+    <meta http-equiv="X-UA-Compatible" content="IE=7">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+
+</head>
+<body>
+    <div id="projet">
+        <h1 id="title">Modal Project</h1>
+        <h2 id="openModal">OPEN MODAL</h2>
+        <div id="modalContent">
+            <h1>Modal Content</h1>
+            <div id="divFermer">
+                <img src="fermer.jpg" alt="fermer">
+            </div>
+        </div>
+    </div>
+
+
+<script>
+    let img = document.querySelector("#divFermer img");
+    let modalContent = document.querySelector("#modalContent");
+    let projet = document.querySelector("#projet");
+    let openModal = document.querySelector("#openModal");
+
+    img.onmouseover = function (){
+        this.classList.toggle("scl1");
+    }
+    img.onclick = function (){
+       modalContent.style.display = "none";
+        projet.style.backgroundColor = "white";
+
+    }
+
+    openModal.onclick = function () {
+        modalContent.style.display = "block";
+        projet.style.backgroundColor = "skyblue";
+
+    }
+</script>
+</body>
+</html>

@@ -1,0 +1,93 @@
+  *{margin: 0; padding: 0;box-sizing: border-box;scroll-behavior: smooth}
+
+  body{
+      background-image: url("Witch Queen Wallpaper 02.jpg");
+      background-size: cover;
+      background-repeat: no-repeat;
+      height: 73vh;
+  }
+
+  #projet{
+      text-align: center;
+      margin-top: 200px;
+      margin-inline: auto;
+      font-family: Roboto, sans-serif;
+      background: white;
+      width: max-content;
+      padding: 30px 80px;
+      border-radius: 25px;
+
+
+  }
+
+  #title{
+      font-size: 3rem;
+  }
+  #openModal{
+      font-size: 1vw;
+      margin-top: 50px;
+      color: white;
+      background-color: deepskyblue;
+      width: 300px;
+      margin-inline: auto;
+      padding: 10px  5px;
+      font-weight:initial;
+      border-radius: 20px;
+      cursor: pointer;
+      border: 2px solid black;
+
+  }
+  #openModal:hover{
+      color: deepskyblue;
+      background-color: white;
+  }
+
+  #modalContent{
+      width: 450px;
+      margin: -180px 0 0 -75px;
+      position: absolute;
+      font-size: 0.5rem;
+      height: 180px;
+      background-color: white;
+      display: none;
+  }
+
+  #modalContent h1{
+      margin-top: 60px;
+      font-size: 2rem;
+  }
+
+  #divFermer img{
+      width: 35px;
+      cursor: pointer;
+  }
+
+  #divFermer img.scl1{
+      animation: scale 1s forwards;
+  }
+
+  @keyframes scale {
+      0%{
+          transform: scale(1);
+      }
+      100%{
+          transform:scale(1.3);
+      }
+  }
+
+
+
+  #divFermer{
+      position: absolute;
+      margin: -85px 0 0 400px;
+  }
+
+  @media screen and (max-width: 800px) {
+      body{
+          height: 100vh;
+      }
+
+      #openModal{
+          font-size: 2rem;
+      }
+  }
